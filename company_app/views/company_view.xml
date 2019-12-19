@@ -31,9 +31,9 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="structural_system"/>
-                                <field name="office_area_as_mt_square"/>
-                                <field name="under_root_area_as_meter"/>
-                                <field name="under_root_area_as_feet"/>
+                <field name="office_area_as_mt_square"/>
+                <field name="under_root_area_as_meter"/>
+                <field name="under_root_area_as_feet"/>
                 <field name="building_ids"/>
                 <field name="active"/>
             </tree>

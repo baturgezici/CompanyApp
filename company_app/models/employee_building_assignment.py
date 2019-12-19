@@ -1,7 +1,7 @@
 from odoo import api, fields, models
 
 
-class employee_building_assignment(models.Model):
+class EmployeeBuildingAssignment(models.Model):
     _name = 'employee.building.assignment'
 
     employee_id = fields.Many2one('hr.employee', string='employee')

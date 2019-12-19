@@ -2,7 +2,7 @@ from odoo import api, fields, models
 import math
 
 
-class fm_building(models.Model):
+class Building(models.Model):
     _name = 'fm.building'
     _description = 'Buildings'
 
@@ -15,7 +15,7 @@ class fm_building(models.Model):
     under_root_area_as_meter = fields.Float(string='Meter: ', compute='_mt_sqr_to_mt')
     under_root_area_as_feet = fields.Float(string='Feet: ', compute='_mt_to_feet')
 
-    active = fields.Binary()
+    active = fields.Boolean()
     building_ids = fields.One2many('employee.building.assignment', 'building_id', string='Building')
 
     @api.depends('office_area_as_mt_square')
